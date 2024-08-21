@@ -42,6 +42,33 @@
 				'https://archicon.qodeinteractive.com/wp-content/uploads/2022/04/portfolio-img-53-650x650.jpg'
 		}
 	];
+
+	const cardInside = [
+		{
+			type: 'Thiết kế',
+			style: 'kiến trúc',
+			cover:
+				'https://archicon.qodeinteractive.com/wp-content/uploads/2022/04/h2-portfolio-img-01-650x650.jpg'
+		},
+		{
+			type: 'Thiết kế',
+			style: 'nội thất',
+			cover:
+				'https://archicon.qodeinteractive.com/wp-content/uploads/2022/04/h2-portfolio-img-02-650x650.jpg'
+		},
+		{
+			type: 'Thi công',
+			style: 'xây dựng',
+			cover:
+				'https://archicon.qodeinteractive.com/wp-content/uploads/2022/04/h2-portfolio-img-03-650x650.jpg'
+		},
+		{
+			type: 'Thi công',
+			style: 'nội thất',
+			cover:
+				'https://archicon.qodeinteractive.com/wp-content/uploads/2022/04/h2-portfolio-img-04-650x650.jpg'
+		}
+	];
 </script>
 
 <!-- Banner -->
@@ -54,8 +81,43 @@
 	/>
 </div>
 
-<!-- Post -->
 <section class="py-16">
+	<div class="w-full max-w-screen-fhd mx-auto my-10 px-4 md:px-16 screen-fhd:px-6">
+		<div class="flex flex-col items-center">
+			<h2 class="grow break-words text-6xl font-bold text-center mb-8">BIG HEADING</h2>
+			<p class="text-xl">Lorem ipsum dolors sit amet, cons th nuse ctetuis isci elit sed do eiusmod ete rorew lelum idid untt ut ores et oremis ips um ne dolors sit amet, con sed do eiusm</p>
+		</div>
+		<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-8 gap-y-16 mt-8">
+			{#each cardInside as item}
+				<div class="relative group w-full aspect-1 rounded-lg overflow-hidden">
+					<a href="/">
+						<img class="h-full object-cover object-center" src={item.cover} alt="" />
+						<div
+							class="absolute inset-0 bg-black/10 group-hover:bg-black/40 transition-all duration-500"
+						></div>
+						<div
+							class="absolute inset-0 group-hover:inset-6 group-hover:border border-white flex flex-col items-center justify-end group-hover:justify-center transition-all duration-500"
+						>
+							<span
+								class="text-white text-center text-xl md:text-lg group-hover:text-2xl md:group-hover:text-xl pb-2 uppercase transition-all duration-500"
+							>
+								{item.type}
+							</span>
+							<span
+								class="px-2 pb-6 group-hover:pb-0 text-white text-center text-6xl md:text-4xl group-hover:text-7xl md:group-hover:text-4xl 2xl:group-hover:text-5xl font-extrabold group-hover:leading-tight md:group-hover:leading-snug uppercase transition-all duration-500"
+							>
+								{item.style}
+							</span>
+						</div>
+					</a>
+				</div>
+			{/each}
+		</div>
+	</div>
+</section>
+
+<!-- Post -->
+<section class="bg-section-highlight  py-16">
 	<div class="w-full max-w-screen-fhd mx-auto my-10 px-4 md:px-16 screen-fhd:px-6">
 		<div class="flex items-center">
 			<h2 class="grow break-words text-2xl font-semibold">Thiết kế nội thất</h2>
@@ -75,7 +137,9 @@
 				>
 			</button>
 		</div>
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 mt-8">
+		<div
+			class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-16 mt-8"
+		>
 			{#each posts as post}
 				<div class="">
 					<div class="w-full aspect-1">
@@ -83,14 +147,20 @@
 					</div>
 					<div class="pt-4">
 						<a href="/">
-							<h5 class="mb-2 text-xl font-lora font-semibold text-gray-900">
+							<h5 class="text-xl font-lora font-semibold text-gray-900 line-clamp-2">
 								{post.title}
 							</h5>
 						</a>
-						<!-- <p class="mb-3 font-normal text-gray-700">
-							Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
-							chronological order.
-						</p> -->
+					</div>
+					<div class="flex flex-wrap gap-y-1 pt-4 text-lg lg:text-base 2xl:text-lg">
+						<!-- <span class="w-2/6 text-gray-700 line-clamp-1">Chủ đầu tư:</span>
+						<span class="w-4/6 font-semibold ps-2">Anh Long</span> -->
+						<span class="w-2/6 text-gray-700 line-clamp-1">Địa chỉ:</span>
+						<span class="w-4/6 font-semibold ps-2">Quảng Ninh</span>
+						<span class="w-2/6 text-gray-700 line-clamp-1">Diện tích:</span>
+						<span class="w-4/6 font-semibold ps-2">200m</span>
+						<span class="w-2/6 text-gray-700 line-clamp-1">Số tầng:</span>
+						<span class="w-4/6 font-semibold ps-2">6 (6 tầng + 1 hầm)</span>
 					</div>
 				</div>
 			{/each}
@@ -99,7 +169,7 @@
 </section>
 
 <!-- Post -->
-<section class="bg-section-highlight py-16">
+<section class="py-16">
 	<div class="w-full max-w-screen-fhd mx-auto my-10 px-4 md:px-16 screen-fhd:px-6">
 		<div class="flex items-center">
 			<h2 class="grow break-words text-2xl font-semibold">Thiết kế kiến trúc</h2>
@@ -119,7 +189,9 @@
 				>
 			</button>
 		</div>
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 mt-8">
+		<div
+			class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-16 mt-8"
+		>
 			{#each posts as post}
 				<div class="">
 					<div class="w-full aspect-1">
@@ -127,14 +199,20 @@
 					</div>
 					<div class="pt-4">
 						<a href="/">
-							<h5 class="mb-2 text-xl font-lora font-semibold text-gray-900">
+							<h5 class="text-xl font-lora font-semibold text-gray-900 line-clamp-2">
 								{post.title}
 							</h5>
 						</a>
-						<!-- <p class="mb-3 font-normal text-gray-700">
-							Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
-							chronological order.
-						</p> -->
+					</div>
+					<div class="flex flex-wrap gap-y-1 pt-4 text-lg lg:text-base 2xl:text-lg">
+						<span class="w-2/6 text-gray-700 line-clamp-1">Chủ đầu tư:</span>
+						<span class="w-4/6 font-semibold ps-2">Anh Long</span>
+						<span class="w-2/6 text-gray-700 line-clamp-1">Địa chỉ:</span>
+						<span class="w-4/6 font-semibold ps-2">Quảng Ninh</span>
+						<span class="w-2/6 text-gray-700 line-clamp-1">Diện tích:</span>
+						<span class="w-4/6 font-semibold ps-2">200m</span>
+						<span class="w-2/6 text-gray-700 line-clamp-1">Số tầng:</span>
+						<span class="w-4/6 font-semibold ps-2">6 (6 tầng + 1 hầm)</span>
 					</div>
 				</div>
 			{/each}
@@ -143,7 +221,7 @@
 </section>
 
 <!-- Post -->
-<section class="py-16">
+<section class="bg-section-highlight py-16">
 	<div class="w-full max-w-screen-fhd mx-auto my-10 px-4 md:px-16 screen-fhd:px-6">
 		<div class="flex items-center">
 			<h2 class="grow break-words text-2xl font-semibold">Tin tức</h2>
@@ -163,7 +241,9 @@
 				>
 			</button>
 		</div>
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 mt-8">
+		<div
+			class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 mt-8"
+		>
 			{#each posts as post}
 				<div class="">
 					<picture class="w-full block aspect-w-3 aspect-h-2">

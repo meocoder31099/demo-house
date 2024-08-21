@@ -253,10 +253,19 @@
 	</div>
 </section>
 
+<!-- Tray icon -->
+ <div class="fixed right-4 bottom-20">
+	<ul class="flex flex-col gap-y-4">
+		<li class="bg-black w-16 aspect-1 rounded-full text-white flex items-center justify-center">Phone</li>
+		<li class="bg-black w-16 aspect-1 rounded-full text-white flex items-center justify-center">Zalo</li>
+		<li class="bg-black w-16 aspect-1 rounded-full text-white flex items-center justify-center">FB</li>
+	</ul>
+ </div>
+
 <footer class="bg-white">
-	<div class="mx-auto w-full p-6 lg:py-8">
+	<div class="mx-auto w-full py-6 lg:py-8">
 		<!-- Begin footer link -->
-		<div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-6">
+		<div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-6 px-4 md:px-16 screen-fhd:px-6">
 			{#each backLink as BLItem}
 				<div>
 					<h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">{BLItem.title}</h2>
@@ -273,7 +282,7 @@
 		<!-- End footer link -->
 		<hr class="my-6 border-base sm:mx-auto lg:my-8" />
 
-		<div class="md:flex flex-wrap md:justify-between">
+		<div class="md:flex flex-wrap gap-y-6 md:justify-between px-4 md:px-16 screen-fhd:px-6">
 			<div class="mb-6 md:mb-0">
 				<a href="https://flowbite.com/" class="flex items-center mb-6">
 					<!-- <img
@@ -285,13 +294,6 @@
 				</a>
 				<div>
 					<ul class="text-gray-500">
-						<li class="mb-4 last:mb-0">
-							<a href="https://flowbite.com/" class="hover:underline">0816.111.222 - 0969.461.890</a
-							>
-						</li>
-						<li class="mb-4 last:mb-0">
-							<a href="https://flowbite.com/" class="hover:underline">dia.chi.email.mail.com</a>
-						</li>
 						<li class="mb-4 last:mb-0">
 							<a href="https://flowbite.com/" class="hover:underline"
 								>Số 499 đường Lương Thế Vinh, phường Mễ Trì, quận Nam Từ Liêm, Hà Nội</a
@@ -305,10 +307,22 @@
 					</ul>
 				</div>
 			</div>
-			<div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">Map here</div>
+			<div class="flex flex-col">
+				<div class="uppercase font-semibold mb-4">Liên hệ</div>
+				<ul class="text-gray-500">
+					<li class="mb-2">
+						<a href="https://flowbite.com/" class="hover:underline">0816.111.222 - 0969.461.890</a
+						>
+					</li>
+					<li class="mb-2">
+						<a href="https://flowbite.com/" class="hover:underline">dia.chi.email.mail.com</a>
+					</li>
+				</ul>
+				<div class="border border-base w-72 aspect-1 rounded-lg flex items-center justify-center text-center">Bản đồ ở đây</div>
+			</div>
 		</div>
 		<hr class="my-6 border-base sm:mx-auto lg:my-8" />
-		<div class="sm:flex sm:items-center sm:justify-between">
+		<div class="sm:flex sm:items-center sm:justify-between px-4 md:px-16 screen-fhd:px-6">
 			<span class="text-sm text-gray-500 sm:text-center"
 				>© 2024 <a href="https://flowbite.com/" class="hover:underline">Hhouse</a>. All Rights
 				Reserved.
