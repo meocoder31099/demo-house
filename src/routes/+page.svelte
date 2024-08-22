@@ -81,13 +81,12 @@
 	/>
 </div>
 
-<section class="py-16">
+<section class="py-28">
 	<div class="w-full max-w-screen-fhd mx-auto my-10 px-4 md:px-16 screen-fhd:px-6">
 		<div class="flex flex-col items-center">
-			<h2 class="grow break-words text-6xl font-bold text-center mb-8">BIG HEADING</h2>
-			<p class="text-xl">
-				Lorem ipsum dolors sit amet, cons th nuse ctetuis isci elit sed do eiusmod ete rorew lelum
-				idid untt ut ores et oremis ips um ne dolors sit amet, con sed do eiusm
+			<h2 class="grow break-words font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center uppercase">ĐẲNG CẤP DỊCH VỤ</h2>
+			<p class="text-lg mt-6">
+				Hhouse Design Studio cung cấp dịch vụ hàng đầu trong nhiều lĩnh vực khác nhau
 			</p>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-8 gap-y-16 mt-8">
@@ -102,7 +101,7 @@
 							class="absolute inset-0 group-hover:inset-6 group-hover:border border-white transition-all duration-500 ease-in-out"
 						>
 						</div>
-						<div class="absolute flex flex-col items-center justify-end left-0 right-0 bottom-6 group-hover:bottom-auto group-hover:top-1/2 group-hover:-translate-y-1/2 [text-shadow:_0_2px_0_rgb(0_0_0)] transition-all duration-1000 ease-in-out">
+						<div class="absolute flex flex-col items-center justify-end left-0 right-0 bottom-6 group-hover:bottom-auto group-hover:top-1/2 group-hover:-translate-y-1/2 transition-all duration-1000 ease-in-out">
 							<span
 								class="text-white text-center text-xl md:text-lg group-hover:text-2xl md:group-hover:text-xl pb-2 uppercase transition-all duration-500"
 							>
