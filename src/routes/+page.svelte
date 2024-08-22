@@ -84,7 +84,11 @@
 <section class="py-28">
 	<div class="w-full max-w-screen-fhd mx-auto my-10 px-4 md:px-16 screen-fhd:px-6">
 		<div class="flex flex-col items-center">
-			<h2 class="grow break-words font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center uppercase">ĐẲNG CẤP DỊCH VỤ</h2>
+			<h2
+				class="grow break-words font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center uppercase"
+			>
+				ĐẲNG CẤP DỊCH VỤ
+			</h2>
 			<p class="text-lg mt-6">
 				Hhouse Design Studio cung cấp dịch vụ hàng đầu trong nhiều lĩnh vực khác nhau
 			</p>
@@ -98,10 +102,11 @@
 							class="absolute inset-0 bg-black/10 group-hover:bg-black/40 transition-all duration-500"
 						></div>
 						<div
-							class="absolute inset-0 group-hover:inset-6 group-hover:border border-white transition-all duration-500 ease-in-out"
+							class="absolute inset-0 group-hover:inset-6 group-hover:border border-white transition-all duration-500"
+						></div>
+						<div
+							class="absolute flex flex-col items-center justify-end left-0 right-0 my-auto bottom-6 group-hover:bottom-1/2 group-hover:translate-y-1/2 transition-all duration-500"
 						>
-						</div>
-						<div class="absolute flex flex-col items-center justify-end left-0 right-0 bottom-6 group-hover:bottom-auto group-hover:top-1/2 group-hover:-translate-y-1/2 transition-all duration-1000 ease-in-out">
 							<span
 								class="text-white text-center text-xl md:text-lg group-hover:text-2xl md:group-hover:text-xl pb-2 uppercase transition-all duration-500"
 							>
