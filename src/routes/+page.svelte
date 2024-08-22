@@ -215,14 +215,14 @@
 					</div>
 					<div class="flex flex-wrap gap-2 pt-4">
 						<span
-							class="bg-gray-100 text-gray-800 text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded border border-gray-500"
+							class="text-gray-800 text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded border border-base"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="24"
 								height="24"
 								viewBox="0 0 24 24"
-								class="w-3.5 h-3.5 me-1"
+								class="w-4 h-4 me-1"
 								aria-hidden="true"
 								fill="currentColor"
 								><path
@@ -232,36 +232,30 @@
 							Quảng Ninh
 						</span>
 						<span
-							class="bg-gray-100 text-gray-800 text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded border border-gray-500"
+							class="text-gray-800 text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded border border-base"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="24"
 								height="24"
 								viewBox="0 0 24 24"
-								class="w-3 h-3 me-1.5 rotate-90"
-								aria-hidden="true"
-								fill="currentColor"><path d="M5 12H3v9h9v-2H5zm7-7h7v7h2V3h-9z"></path></svg
-							>
-
-							200m
-							<sup class="align-super">2</sup>
-						</span>
-						<span
-							class="bg-gray-100 text-gray-800 text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded border border-gray-500"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								class="w-3.5 h-3.5 me-1"
+								class="w-4 h-4 me-1"
 								aria-hidden="true"
 								fill="currentColor"
 								><path
 									d="M3 5v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2H5c-1.103 0-2 .897-2 2zm16.002 14H5V5h14l.002 14z"
 								></path><path d="M15 12h2V7h-5v2h3zm-3 3H9v-3H7v5h5z"></path></svg
 							>
+
+							200m
+							<sup class="align-super">2</sup>
+						</span>
+						<span
+							class="text-gray-800 text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded border border-base"
+						>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="w-4 h-4 me-1"
+						aria-hidden="true"
+						fill="currentColor"><path d="M19 2H9c-1.103 0-2 .897-2 2v6H5c-1.103 0-2 .897-2 2v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4c0-1.103-.897-2-2-2zM5 12h6v8H5v-8zm14 8h-6v-8c0-1.103-.897-2-2-2H9V4h10v16z"></path><path d="M11 6h2v2h-2zm4 0h2v2h-2zm0 4.031h2V12h-2zM15 14h2v2h-2zm-8 .001h2v2H7z"></path></svg>
 							6 tầng (6 tầng + 1 hầm)
 						</span>
 						<!-- <span class="w-2/6 text-gray-700 line-clamp-1">Chủ đầu tư:</span>
@@ -272,6 +266,58 @@
 						<span class="w-4/6 text-right font-semibold ps-2">200m</span>
 						<span class="w-2/6 text-gray-700 line-clamp-1">Số tầng:</span>
 						<span class="w-4/6 text-right font-semibold ps-2">6 (6 tầng + 1 hầm)</span> -->
+					</div>
+				</div>
+			{/each}
+		</div>
+	</div>
+</section>
+
+<!-- Post -->
+<section class="py-16">
+	<div class="w-full max-w-screen-fhd mx-auto my-10 px-4 md:px-16 screen-fhd:px-6">
+		<div class="flex items-center">
+			<h2 class="grow break-words text-2xl font-semibold">Thiết kế kiến trúc</h2>
+			<button
+				class="flex items-center gap-x-2 px-3 py-2 transition-all duration-200 ease-linear hover:bg-gray-100 rounded-md"
+			>
+				<span>More</span>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					class="w-4 h-4 fill-current rotate-180"
+					><path
+						d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"
+					></path></svg
+				>
+			</button>
+		</div>
+		<div
+			class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-16 mt-8"
+		>
+			{#each posts as post}
+				<div class="">
+					<div class="w-full aspect-1">
+						<img class="h-full object-cover object-center rounded-lg" src={post.cover} alt="" />
+					</div>
+					<div class="pt-4">
+						<a href="/">
+							<h5 class="text-xl font-lora font-semibold text-gray-900 line-clamp-2">
+								{post.title}
+							</h5>
+						</a>
+					</div>
+					<div class="flex flex-wrap gap-y-0.5 pt-4">
+						<span class="w-2/6 text-gray-700 line-clamp-1">Chủ đầu tư:</span>
+						<span class="w-4/6 text-right font-semibold ps-2">Anh Long</span>
+						<span class="w-2/6 text-gray-700 line-clamp-1">Địa chỉ:</span>
+						<span class="w-4/6 text-right font-semibold ps-2">Quảng Ninh</span>
+						<span class="w-2/6 text-gray-700 line-clamp-1">Diện tích:</span>
+						<span class="w-4/6 text-right font-semibold ps-2">200m</span>
+						<span class="w-2/6 text-gray-700 line-clamp-1">Số tầng:</span>
+						<span class="w-4/6 text-right font-semibold ps-2">6 (6 tầng + 1 hầm)</span>
 					</div>
 				</div>
 			{/each}
