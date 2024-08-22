@@ -85,7 +85,10 @@
 	<div class="w-full max-w-screen-fhd mx-auto my-10 px-4 md:px-16 screen-fhd:px-6">
 		<div class="flex flex-col items-center">
 			<h2 class="grow break-words text-6xl font-bold text-center mb-8">BIG HEADING</h2>
-			<p class="text-xl">Lorem ipsum dolors sit amet, cons th nuse ctetuis isci elit sed do eiusmod ete rorew lelum idid untt ut ores et oremis ips um ne dolors sit amet, con sed do eiusm</p>
+			<p class="text-xl">
+				Lorem ipsum dolors sit amet, cons th nuse ctetuis isci elit sed do eiusmod ete rorew lelum
+				idid untt ut ores et oremis ips um ne dolors sit amet, con sed do eiusm
+			</p>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-8 gap-y-16 mt-8">
 			{#each cardInside as item}
@@ -96,15 +99,17 @@
 							class="absolute inset-0 bg-black/10 group-hover:bg-black/40 transition-all duration-500"
 						></div>
 						<div
-							class="absolute inset-0 group-hover:inset-6 group-hover:border border-white flex flex-col items-center justify-end group-hover:justify-center transition-all duration-500"
+							class="absolute inset-0 group-hover:inset-6 group-hover:border border-white transition-all duration-500 ease-in-out"
 						>
+						</div>
+						<div class="absolute flex flex-col items-center justify-end left-0 right-0 bottom-6 group-hover:bottom-auto group-hover:top-1/2 group-hover:-translate-y-1/2 transition-all duration-1000 ease-in-out">
 							<span
 								class="text-white text-center text-xl md:text-lg group-hover:text-2xl md:group-hover:text-xl pb-2 uppercase transition-all duration-500"
 							>
 								{item.type}
 							</span>
 							<span
-								class="px-2 pb-6 group-hover:pb-0 text-white text-center text-6xl md:text-4xl group-hover:text-7xl md:group-hover:text-4xl 2xl:group-hover:text-5xl font-extrabold group-hover:leading-tight md:group-hover:leading-snug uppercase transition-all duration-500"
+								class="px-2 text-white text-center text-4xl group-hover:text-5xl md:group-hover:text-4xl 2xl:group-hover:text-5xl font-extrabold group-hover:leading-tight md:group-hover:leading-snug uppercase transition-all duration-500"
 							>
 								{item.style}
 							</span>
@@ -117,7 +122,7 @@
 </section>
 
 <!-- Post -->
-<section class="bg-section-highlight  py-16">
+<section class="bg-section-highlight py-16">
 	<div class="w-full max-w-screen-fhd mx-auto my-10 px-4 md:px-16 screen-fhd:px-6">
 		<div class="flex items-center">
 			<h2 class="grow break-words text-2xl font-semibold">Thiết kế nội thất</h2>
