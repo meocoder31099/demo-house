@@ -215,7 +215,7 @@
 					</div>
 					<div class="flex flex-wrap gap-2 pt-4">
 						<span
-							class="bg-gray-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded border border-gray-500"
+							class="bg-gray-100 text-gray-800 text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded border border-gray-500"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -232,7 +232,7 @@
 							Quảng Ninh
 						</span>
 						<span
-							class="bg-gray-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded border border-gray-500"
+							class="bg-gray-100 text-gray-800 text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded border border-gray-500"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -245,9 +245,10 @@
 							>
 
 							200m
+							<sup class="align-super">2</sup>
 						</span>
 						<span
-							class="bg-gray-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded border border-gray-500"
+							class="bg-gray-100 text-gray-800 text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded border border-gray-500"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
