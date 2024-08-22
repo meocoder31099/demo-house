@@ -17,12 +17,14 @@ export default {
       },
       backgroundColor: {
         'section-highlight': '#f8f8f7'
-      }
+      },
     },
     corePlugins: {
       aspectRatio: false,
     }
   },
-  plugins: [require('@tailwindcss/aspect-ratio'),]
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ]
 }
 

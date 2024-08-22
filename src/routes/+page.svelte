@@ -102,10 +102,10 @@
 							class="absolute inset-0 bg-black/10 group-hover:bg-black/40 transition-all duration-500"
 						></div>
 						<div
-							class="absolute inset-0 group-hover:inset-8 group-hover:border border-white rounded-lg transition-all duration-500"
+							class="absolute inset-0 group-hover:inset-6 group-hover:border border-white transition-all duration-500"
 						></div>
 						<div
-							class="absolute flex flex-col items-center justify-end left-0 right-0 my-auto bottom-6 group-hover:bottom-1/2 group-hover:translate-y-1/2 transition-all duration-500"
+							class="absolute flex flex-col items-center justify-end left-0 right-0 my-auto bottom-6 group-hover:bottom-1/2 group-hover:translate-y-1/2 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] transition-all duration-500"
 						>
 							<span
 								class="text-white text-center text-xl md:text-lg group-hover:text-2xl md:group-hover:text-xl pb-2 uppercase transition-all duration-500"
@@ -213,15 +213,64 @@
 							</h5>
 						</a>
 					</div>
-					<div class="flex flex-wrap gap-y-0.5 pt-4">
-						<span class="w-2/6 text-gray-700 line-clamp-1">Chủ đầu tư:</span>
+					<div class="flex flex-wrap gap-2 pt-4">
+						<span
+							class="bg-gray-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded border border-gray-500"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								class="w-3.5 h-3.5 me-1"
+								aria-hidden="true"
+								fill="currentColor"
+								><path
+									d="M11.42 21.815a1.004 1.004 0 0 0 1.16 0C12.884 21.598 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.996c-.029 6.444 7.116 11.602 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.004.021 4.438-4.388 8.423-6 9.731-1.611-1.308-6.021-5.293-6-9.735 0-3.309 2.691-6 6-6z"
+								></path><path d="M11 14h2v-3h3V9h-3V6h-2v3H8v2h3z"></path></svg
+							>
+							Quảng Ninh
+						</span>
+						<span
+							class="bg-gray-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded border border-gray-500"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								class="w-3 h-3 me-1.5 rotate-90"
+								aria-hidden="true"
+								fill="currentColor"><path d="M5 12H3v9h9v-2H5zm7-7h7v7h2V3h-9z"></path></svg
+							>
+
+							200m
+						</span>
+						<span
+							class="bg-gray-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded border border-gray-500"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								class="w-3.5 h-3.5 me-1"
+								aria-hidden="true"
+								fill="currentColor"
+								><path
+									d="M3 5v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2H5c-1.103 0-2 .897-2 2zm16.002 14H5V5h14l.002 14z"
+								></path><path d="M15 12h2V7h-5v2h3zm-3 3H9v-3H7v5h5z"></path></svg
+							>
+							6 tầng (6 tầng + 1 hầm)
+						</span>
+						<!-- <span class="w-2/6 text-gray-700 line-clamp-1">Chủ đầu tư:</span>
 						<span class="w-4/6 text-right font-semibold ps-2">Anh Long</span>
 						<span class="w-2/6 text-gray-700 line-clamp-1">Địa chỉ:</span>
 						<span class="w-4/6 text-right font-semibold ps-2">Quảng Ninh</span>
 						<span class="w-2/6 text-gray-700 line-clamp-1">Diện tích:</span>
 						<span class="w-4/6 text-right font-semibold ps-2">200m</span>
 						<span class="w-2/6 text-gray-700 line-clamp-1">Số tầng:</span>
-						<span class="w-4/6 text-right font-semibold ps-2">6 (6 tầng + 1 hầm)</span>
+						<span class="w-4/6 text-right font-semibold ps-2">6 (6 tầng + 1 hầm)</span> -->
 					</div>
 				</div>
 			{/each}
