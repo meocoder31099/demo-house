@@ -102,7 +102,7 @@
 							class="absolute inset-0 bg-black/10 group-hover:bg-black/40 transition-all duration-500"
 						></div>
 						<div
-							class="absolute inset-0 group-hover:inset-6 group-hover:border border-white transition-all duration-500"
+							class="absolute inset-0 group-hover:inset-8 group-hover:border border-white rounded-lg transition-all duration-500"
 						></div>
 						<div
 							class="absolute flex flex-col items-center justify-end left-0 right-0 my-auto bottom-6 group-hover:bottom-1/2 group-hover:translate-y-1/2 transition-all duration-500"
@@ -161,7 +161,7 @@
 							</h5>
 						</a>
 					</div>
-					<div class="flex flex-wrap gap-y-1 pt-4 text-lg lg:text-base 2xl:text-lg">
+					<div class="flex flex-wrap gap-y-0.5 pt-4">
 						<!-- <span class="w-2/6 text-gray-700 line-clamp-1">Chủ đầu tư:</span>
 						<span class="w-4/6 font-semibold ps-2">Anh Long</span> -->
 						<span class="w-2/6 text-gray-700 line-clamp-1">Địa chỉ:</span>
@@ -213,15 +213,15 @@
 							</h5>
 						</a>
 					</div>
-					<div class="flex flex-wrap gap-y-1 pt-4 text-lg lg:text-base 2xl:text-lg">
+					<div class="flex flex-wrap gap-y-0.5 pt-4">
 						<span class="w-2/6 text-gray-700 line-clamp-1">Chủ đầu tư:</span>
-						<span class="w-4/6 font-semibold ps-2">Anh Long</span>
+						<span class="w-4/6 text-right font-semibold ps-2">Anh Long</span>
 						<span class="w-2/6 text-gray-700 line-clamp-1">Địa chỉ:</span>
-						<span class="w-4/6 font-semibold ps-2">Quảng Ninh</span>
+						<span class="w-4/6 text-right font-semibold ps-2">Quảng Ninh</span>
 						<span class="w-2/6 text-gray-700 line-clamp-1">Diện tích:</span>
-						<span class="w-4/6 font-semibold ps-2">200m</span>
+						<span class="w-4/6 text-right font-semibold ps-2">200m</span>
 						<span class="w-2/6 text-gray-700 line-clamp-1">Số tầng:</span>
-						<span class="w-4/6 font-semibold ps-2">6 (6 tầng + 1 hầm)</span>
+						<span class="w-4/6 text-right font-semibold ps-2">6 (6 tầng + 1 hầm)</span>
 					</div>
 				</div>
 			{/each}
