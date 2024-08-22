@@ -102,7 +102,7 @@
 							class="absolute inset-0 group-hover:inset-6 group-hover:border border-white transition-all duration-500 ease-in-out"
 						>
 						</div>
-						<div class="absolute flex flex-col items-center justify-end left-0 right-0 bottom-6 group-hover:bottom-auto group-hover:top-1/2 group-hover:-translate-y-1/2 transition-all duration-1000 ease-in-out">
+						<div class="absolute flex flex-col items-center justify-end left-0 right-0 bottom-6 group-hover:bottom-auto group-hover:top-1/2 group-hover:-translate-y-1/2 [text-shadow:_0_2px_0_rgb(0_0_0)] transition-all duration-1000 ease-in-out">
 							<span
 								class="text-white text-center text-xl md:text-lg group-hover:text-2xl md:group-hover:text-xl pb-2 uppercase transition-all duration-500"
 							>
